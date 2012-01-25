@@ -7,6 +7,9 @@ function checkForValidUrl(tabId, changeInfo, tab) {
   // If the letter 'g' is found in the tab's URL...
   if (tab.url.indexOf('www.pivotaltracker.com/projects') > -1) {
     chrome.pageAction.show(tabId);
+    chrome.tabs.insertCSS(tabId, {
+        code: '#current_itemList_items .storyItem.accepted {display:none;}'
+    });
   }
 };
 
