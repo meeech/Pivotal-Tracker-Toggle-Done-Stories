@@ -1,3 +1,6 @@
-Hide's accepted stories for Pivotal Tracker in Current Column.
+Show/Hide Done (Accepted) Stories in Current column Pivotal Tracker
 
-Basically loads one line of css.
+Simple extension to scratch an itch. Info about the problem it solves for me: http://community.pivotaltracker.com/pivotal/topics/please_let_me_hide_done_items_in_the_current_iteration
+
+Download the file pivotal-extension.crx and double click to install in Chrome. When you are on https://www.pivotaltracker.com/projects/* you will see a little Lightning Bolt in the URL bar. Click that to Show/Hide done stories.
+
