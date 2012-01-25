@@ -1,0 +1,24 @@
+{
+  "name": "Hide Accepted Stories in Pivotal Tracker",
+  "version": "1.0",
+  "description": "Just hides Accepted/Done Stories in Pivotal Tracker",
+  "page_action": {
+    "default_icon": "icon32.png"
+  },
+  "permissions" : [
+    "tabs"
+  ],
+  "background": { "scripts": ["background.js"] },  
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "matches": ["https://www.pivotaltracker.com/projects/*"],
+      "css": ["main.css"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

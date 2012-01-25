@@ -1,0 +1,3 @@
+Hide's accepted stories for Pivotal Tracker in Current Column.
+
+Basically loads one line of css.
