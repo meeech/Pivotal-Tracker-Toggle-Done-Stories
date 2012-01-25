@@ -1,9 +1,9 @@
 {
-  "name": "Hide Accepted Stories in Pivotal Tracker",
+  "name": "Toggle Done in PV",
   "version": "1.0",
-  "description": "Show/Hide Accepted/Done Stories in Pivotal Tracker",
+  "description": "Show/Hide Done Stories in Current column Pivotal Tracker",
   "page_action": {
-    "default_icon": "icon32.png"
+    "default_icon": "icon_on.png"
   },
   "permissions" : [
     "tabs",
