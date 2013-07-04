@@ -8,7 +8,7 @@ function toggleStory(tab, hide) {
     var displayVal = (true == PVhidden) ? 'none':'block',
         iconVal = (true == PVhidden) ? 'icon_on.png' : 'icon_off.png';
     chrome.tabs.insertCSS(tab.id, {
-        code: '#current_itemList_items .storyItem.accepted {display:'+displayVal+';}'
+        code: '#panel_current .story.accepted {display:'+displayVal+';}'
     });
     chrome.pageAction.setIcon({tabId: tab.id, path: iconVal});
     return !PVhidden;
@@ -18,7 +18,7 @@ function toggleStory(tab, hide) {
 // Called when the url of a tab changes.
 function checkForValidUrl(tabId, changeInfo, tab) {
   // If the letter 'g' is found in the tab's URL...
-  if (tab.url.indexOf('www.pivotaltracker.com/projects') > -1) {
+  if (tab.url.indexOf('www.pivotaltracker.com/s/projects') > -1) {
     chrome.pageAction.show(tabId);
     //Default hide
     PVhidden = toggleStory(tab, PVhidden);

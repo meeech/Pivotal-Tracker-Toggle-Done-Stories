@@ -1,13 +1,14 @@
 {
+  "manifest_version": 2,
   "name": "Toggle Done in PV",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Show/Hide Done Stories in Current column Pivotal Tracker",
   "page_action": {
     "default_icon": "icon_on.png"
   },
   "permissions" : [
     "tabs",
-    "https://www.pivotaltracker.com/projects/*"
+    "https://www.pivotaltracker.com/s/projects/*"
   ],
   "background": { "scripts": ["background.js"] },  
   "icons": {
